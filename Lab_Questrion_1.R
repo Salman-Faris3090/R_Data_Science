@@ -15,11 +15,10 @@ cat("The Longest word of the Paragraph is =",Longest_Word)
 
 #Replacing Specific Words
 old_word <-"to"
-new_word <-"digrdfg"
-modified_paragraph <-gsub(paste("\\b ",old_word,"\\b "),new_word, paragraph)
+new_word <-"and"
+modified_paragraph <-gsub(paste0("\\b",old_word,"\\b"),new_word, paragraph)
 cat("Modified Paragraph is =",modified_paragraph)
 
 
 new <-unlist(strsplit(modified_paragraph, "\\s+"))
 cat("The total number of words = ", length(new))
-#lsfdhhsg
